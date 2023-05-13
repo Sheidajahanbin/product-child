@@ -22,7 +22,7 @@ const CHILD = styled.p`
   padding: 0px 40px 0px 40px;
 `;
 const I = styled.i`
-  background-color: ${(props) => (props.a ? "white" : "red")};
+  color: ${(props) => (props.a ? "" : "red")};
 `;
 
 class Comp2 extends Component {
@@ -45,7 +45,7 @@ class Comp2 extends Component {
         <PRICE>{price}</PRICE>
         <CHILD>{children}</CHILD>
         <div onClick={this.selectHeart}>
-          <I className="fa fa-heart-o" a={this.state.flag}></I>
+          <I className="fa fa-heart" a={this.state.flag}></I>
         </div>
       </DIV>
     );
